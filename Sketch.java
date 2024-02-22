@@ -1,36 +1,51 @@
+/*
+ * Description: sketches a house 
+ * Author: Edric
+*/
+
 import processing.core.PApplet;
 
 public class Sketch extends PApplet {
-	
-	
-  /**
-   * Called once at the beginning of execution, put your size all in this method
-   */
+
   public void settings() {
-	// put your size call here
-    size(400, 400);
+	// window size
+    size(700, 500);
   }
 
-  /** 
-   * Called once at the beginning of execution.  Add initial set up
-   * values here i.e background, stroke, fill etc.
-   */
+  // initial setup values
   public void setup() {
-    background(210, 255, 173);
+    // background color
+    background(0, 50, 100);
+
+    // hill
+    fill(0,150,0);
+    ellipse(350,650,1400,500);
+
+    // moon
+    fill(200,200,200);
+    ellipse(150,150,150,150);
+
+    // draws base
+    fill(200,180,150);
+    rect(200, 350, 300, 150);
+    rect(400,200,50,150);
+
+    // draws roof
+    fill(180,160,130);
+    triangle(200,350,350,200,500,350);
+
+    // draws door
+    fill(220,200,170);
+    rect(325,400,50,100);
+
+    // draws windows
+    fill(160,140,110);
+    ellipse(250,400,50,50);
+    ellipse(450,400,50,50);
   }
 
-  /**
-   * Called repeatedly, anything drawn to the screen goes here
-   */
+  // called repeatedly
   public void draw() {
-	  
-	// sample code, delete this stuff
-    stroke(128);
-    line(150, 25, 270, 350);  
-
-    stroke(255);
-    line(50, 125, 70, 50);  
+	  // not necessary
   }
-  
-  // define other methods down here.
 }
