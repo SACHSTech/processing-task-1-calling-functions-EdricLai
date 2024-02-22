@@ -7,21 +7,34 @@ import processing.core.PApplet;
 
 public class Sketch extends PApplet {
 
+  /*
+   * called once
+   * initial settings
+   */
   public void settings() {
 	// window size
     size(700, 500);
   }
 
-  // initial setup values
+  /*
+   * called once
+   * initial setup values
+   */
   public void setup() {
     // background color
     background(0, 50, 100);
+  }
 
-    // hill
+  /*
+   * called repeatedly
+   * draws items
+   */
+  public void draw() {
+    // draws hill
     fill(0,150,0);
     ellipse(350,650,1400,500);
 
-    // moon
+    // draws moon
     fill(200,200,200);
     ellipse(150,150,150,150);
 
@@ -44,8 +57,4 @@ public class Sketch extends PApplet {
     ellipse(450,400,50,50);
   }
 
-  // called repeatedly
-  public void draw() {
-	  // not necessary
-  }
 }
