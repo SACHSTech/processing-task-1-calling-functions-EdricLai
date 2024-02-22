@@ -12,7 +12,7 @@ public class Sketch extends PApplet {
    * initial settings
    */
   public void settings() {
-	// window size
+    // window size
     size(700, 500);
   }
 
